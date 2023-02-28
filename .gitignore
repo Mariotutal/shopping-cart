@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+
+# build output
+/dist
+
+# parcel cache and cache loader
+.cache
+.parcel-cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.idea
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

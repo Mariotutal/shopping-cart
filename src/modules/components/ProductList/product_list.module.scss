@@ -1,0 +1,55 @@
+@import '../../../styles/mixins.scss';
+
+.container {
+  width: 100%;
+  .productList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px;
+      gap: 8px;
+
+      .imageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 64px;
+          border-radius: 5px;
+        }
+      }
+      p {
+        margin: 0;
+      }
+      .text{
+        font-size: 12px;
+        font-weight: 600;
+        padding-right: 4px;
+      }
+      @include breakpoint(medium){
+        flex-direction: row;
+        margin:16px;
+
+      }
+      &:hover{
+        background-color: rgb(240, 240, 240);
+        transition: 0.2s ease-in
+      }
+    }
+
+  }
+}
