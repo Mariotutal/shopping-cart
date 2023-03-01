@@ -21,5 +21,5 @@ A shopping cart mde with parcel, zustand, reactJS
 3. Upload the files to a web server to make the application available online.
 
 ## Note
-the build for production is broken because an error on zustand with parcel that is going to be fixed on:
+the build for production was broken because an error on zustand with parcel that was fixed on:
 - https://github.com/pmndrs/zustand/pull/1661

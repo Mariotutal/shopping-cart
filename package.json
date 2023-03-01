@@ -8,7 +8,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
-    "zustand": "^4.3.4"
+    "zustand": "^4.3.5"
   },
   "scripts": {
     "start": "parcel src/index.html",
