@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 1;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.875rem;
+
+  span + span {
+    margin-left: 0.5rem;
+  }
+}
