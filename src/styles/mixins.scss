@@ -1,10 +1,10 @@
-// Valores de los breakpoints
+// BreakPoint Values
 $small: 576px;
 $medium: 768px;
 $large: 992px;
 $extra-large: 1200px;
 
-// Mixin para definir un breakpoint
+// Mixin to define a breakPoint
 @mixin breakpoint($point) {
   @if $point == small {
     @media (min-width: $small) {

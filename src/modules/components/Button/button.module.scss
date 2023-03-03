@@ -1,4 +1,4 @@
-// Colores semánticos
+// Semantic Colors
 $primary: #007bff;
 $secondary: #6c757d;
 $success: #28a745;
@@ -8,7 +8,7 @@ $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #343a40;
 
-// Botón
+// Button
 .button {
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ $dark: #343a40;
   border: none;
   border-radius: 5px;
   color: #fff;
-  
+
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 

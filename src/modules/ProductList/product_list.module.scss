@@ -1,4 +1,4 @@
-@import '../../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .container {
   width: 100%;
@@ -22,7 +22,7 @@
       padding: 8px;
       gap: 8px;
 
-      .imageContainer{
+      .imageContainer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,21 +35,19 @@
       p {
         margin: 0;
       }
-      .text{
+      .text {
         font-size: 12px;
         font-weight: 600;
         padding-right: 4px;
       }
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         flex-direction: row;
-        margin:16px;
-
+        margin: 16px;
       }
-      &:hover{
+      &:hover {
         background-color: rgb(240, 240, 240);
-        transition: 0.2s ease-in
+        transition: 0.2s ease-in;
       }
     }
-
   }
 }

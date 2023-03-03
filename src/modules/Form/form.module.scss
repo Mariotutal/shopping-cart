@@ -1,0 +1,49 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$input-height: 2rem;
+
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      display: block;
+      padding: 0.5rem;
+      border: 1px solid $secondary-color;
+      border-radius: 0.25rem;
+      height: $input-height;
+
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+      }
+    }
+    span {
+      color: red;
+      font-size: 0.8rem;
+    }
+    .send {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
