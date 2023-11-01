@@ -1,6 +1,6 @@
 import { Trash } from "react-feather";
-import useStore from "../../../hooks/store";
-import Button from "../Button/Button";
+import useStore from "../../hooks/useProductStore";
+import Button from "../components/Button/Button";
 import styles from "./cart.module.scss";
 
 const Cart = () => {
@@ -23,7 +23,7 @@ const Cart = () => {
         <ul>
           {cartItems.map((item) => (
             <li key={item.id}>
-              {item.name} - ${item.price} x {item.cantidad}{" "}
+              {item.name} - ${item.price} x {item.quantity}{" "}
               <Button
                 variant="danger"
                 onClick={() => handleRemoveFromCart(item.id)}

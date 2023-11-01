@@ -1,6 +1,6 @@
-import { PlusCircle, Image } from "react-feather";
-import useStore from "../../../hooks/store";
-import Button from "../Button/Button";
+import { PlusCircle } from "react-feather";
+import useProductStore from "../../hooks/useProductStore";
+import Button from "../components/Button/Button";
 import styles from "./product_list.module.scss";
 
 const products = [
@@ -26,7 +26,7 @@ const products = [
 ];
 
 const ProductList = () => {
-  const addToCart = useStore((state) => state.addToCart);
+  const addToCart = useProductStore((state) => state.addToCart);
 
   const handleAddToCart = (product) => {
     addToCart(product);
@@ -34,7 +34,7 @@ const ProductList = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Product List</h1>
+      <h1>Lista de Productos</h1>
       <ul className={styles.productList}>
         {products.map((product) => (
           <li key={product.id}>
@@ -46,7 +46,7 @@ const ProductList = () => {
 
             <p>${product.price}</p>
             <Button variant="primary" onClick={() => handleAddToCart(product)}>
-              <span className={styles.text}>Add to Cart</span> <PlusCircle />
+              <span className={styles.text}>Añadir</span> <PlusCircle />
             </Button>
           </li>
         ))}
